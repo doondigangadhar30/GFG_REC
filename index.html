@@ -1,0 +1,493 @@
+<!-- 
+  Project: GeeksforGeeks Student Chapter Raghu Engineering College Website template
+  Uploaded: Monday, 10 March 2025
+  Author: R Doondi Gangadhar
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFG Student Chapter | REC</title>
+
+    <!-- Primary CSS and JS files -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/GfG-IIIT-Bh/GfG-IIIT-Bh.github.io/index.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/GfG-IIIT-Bh/GfG-IIIT-Bh.github.io/index.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Preconnect to improve external resources load time -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+    <link rel="preconnect" href="https://docs.google.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <style>
+        /* Ensure iframe visibility */
+        #contact-form {
+            width: 100%;
+            max-width: 640px;
+            height: 687px;
+            border: none;
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Loading screen -->
+    <div id="loader_block">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Top of the page -->
+    <div id="top-loc"></div>
+
+    <!-- Menu bar -->
+    <nav id="navbar-wrap">
+        <!-- Desktop Menu -->
+        <div id="navbar">
+            <div data-aos="fade-down" id="logo" class="reverse">
+                <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+                <div class="logo"><img
+                        src="assets/logo-small.gif" style="height: 80px; width:160px;">
+                </div>
+            </div>
+            <div id="links" data-aos="fade-down">
+                <a href="#top-loc">About Us</a>
+                <a href="#events-loc">Events</a>
+                <a href="#team-loc">Team</a>
+                <a href="#social-media-loc">Social Media</a>
+                <a href="#contact-us-loc">Contact Us</a>
+            </div>
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <div id="mySidenav" class="sidenav">
+            <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#top-loc">About Us</a>
+            <a href="#events-loc">Events</a>
+            <a href="#team-loc">Team</a>
+            <a href="#social-media-loc">Social Media</a>
+            <a href="#contact-us-loc">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Header section -->
+    <section id="about-us-loc" class="section-body">
+        <div id="header-wrap">
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+                <div id="bonjour">Hello, GEEKS!!</div>
+                <div id="welcome">Welcome to <span id="geeksforgeeks">GeeksforGeeks</span> Student Chapter
+                    of Raghu Engineering College
+                </div>
+                    <h4 style="font-size: 1.2rem; font-family: Arial, sans-serif; font-weight: 600; color: #333;">
+                        At GFG Student Chapter REC, we thrive on community-driven efforts. We provide a dynamic space where 
+                        <span class="dynamic-text" style="color: #007bff; font-weight: bold;"></span> 
+                        unite under one roof. <br>
+                        Here, we learn, grow, and connect with the broader community, fostering a collaborative spirit.
+                    </h4>
+            </div>
+                     
+                    
+            </div>
+            <div id="header-img" data-aos="fade-up">
+                <img src="assets/banner.gif" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="events-loc" class="swiper-body">
+        <div data-aos="flip-up">
+            <img id="events-head-img" src="assets/past-events.webp">
+        </div>
+        <div class="swiper mySwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/events/6.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/events/5.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/events/4.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/events/3.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/events/2.jpg"></div>
+                <div class="swiper-slide"><img src="./assets/events/1.jpg"></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+
+   
+    
+    <section id="team-loc" class="section-body">
+        <div>
+            <div class="our-team-head" data-aos="fade-down"><span>Our</span> Core Team</div>
+    
+            <div class="team-members" data-aos="fade-up">
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/1.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Korlam Mukesh Koushik</h3>
+                        <h4 class="title">Chair Person</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/mukesh-koushik-korlam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href=" https://github.com/Mukesh-Koushik/" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/dantehere1315" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/2.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Sai Anupama</h3>
+                        <h4 class="title">Vice Chair Person</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/sai-anupama-pervela-95483a274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/Sai-Anupama" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/__anu._.29__/" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/3.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Nandeeswari Nallamelli</h3>
+                        <h4 class="title">Technical Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/nandeeswari-nallamelli-4a24b8274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/Betterself04" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/_nandhu_nallamelli?igsh=MW9kZXF4aXRldGp2Yg==" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/4.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Ch. Varun Srikesh</h3>
+                        <h4 class="title">Technical Co-Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/varun-srikesh-211aa5266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/srikesh-engg116" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/varunsrikesh" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/5.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">K Sadhvi Venkat</h3>
+                        <h4 class="title">Design Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/sadhvi-venkat-kappa-a3706b272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/sadhvivenkat" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/sadhvivenkat4022" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/6.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Bikkavolu Bhuvan</h3>
+                        <h4 class="title">Design Co-Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href=" https://www.linkedin.com/in/bhuvan-bikkavolu-03997b33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/b-bhuvan" class="fa fa-github" aria-hidden="true"></a></li>
+                        <!-- <li><a href="https://www.instagram.com" class="fa fa-instagram" aria-hidden="true"></a></li> -->
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/7.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Routhu Doondi Gangadhar</h3>
+                        <h4 class="title">Marketing Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/doondi" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/doondigangadhar30" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/doondi_gangadhar_routhu" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/8.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lola Reethika</h3>
+                        <h4 class="title">Event Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/reethikalola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="github.com/reethika-lola" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href=" https://www.instagram.com/rit.uuu_?igsh=OGdhYmV2YTcwbDVq" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/9.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Kotha Sri Harsha</h3>
+                        <h4 class="title">Event Head</h4>
+                    </div>
+                    <ul class="social">
+                        <!-- <li><a href="https://www.linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com" class="fa fa-github" aria-hidden="true"></a></li> -->
+                        <li><a href="https://www.instagram.com/_.harsha45._" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/10.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Padala Bhavya Sri</h3>
+                        <h4 class="title">Social Media Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/bhavya-sri-padala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/Bhavya-Sri7" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/bhavya._35/profilecard/?igsh=MWw2NHAyZ252bmlkcA==" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/11.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Kusumitha</h3>
+                        <h4 class="title">Public Relations and Out Reach Head</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/kusumitha-tadavarthi-5a1360255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="mailto:Kusumithatadavarthi12@gmail.com" class="fa fa-envelope" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/Tadavarthikusumitha" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/12.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Nalla Yashwanth</h3>
+                        <h4 class="title">Community Manager</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/yashwanth4512/?originalSubdomain=in" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <!-- <li><a href="https://github.com" class="fa fa-github" aria-hidden="true"></a></li> -->
+                        <li><a href="https://www.instagram.com/_yashwanth_0_5" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/team/13.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Balusu Sehwag Ganesh </h3>
+                        <h4 class="title">Community Manager</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/sehwag-ganesh-8b7730293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/sehwagganesh8" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/mr_sehwag_2005?utm_source=qr&igsh=ZDlvcmtoYXQ3c2tq" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Former campus leads section -->
+    <section class="section-body">
+        <div>
+            <div class="our-team-head" data-aos="fade-down"><span>Former</span> Campus Leads</div>
+
+            <div class="team-members" data-aos="fade-up">
+
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/former/l1.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Boora Harsha vardhan</h3>
+                        <h4 class="title">Chair Person</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/harsha-vardhan-boora-551a1525b/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/harshavardhanyadav2004" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/harsha_vardhan_boora/" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" img src="./assets/former/l2.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Nallana Raghavendra</h3>
+                        <h4 class="title">Vice Chair Person</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/raghavendra-nallana/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a href="https://github.com/raghavnallana17298" class="fa fa-github" aria-hidden="true"></a></li>
+                        <li><a href="https://www.instagram.com/____raghav___nallana___/" class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social media section -->
+    <section id="social-media-loc" class="socials-body">
+        <div id="socials-wrap">
+            <div id="socials-img" data-aos="flip-up">
+                <img data-src="./assets/social-media-shadow.webp">
+            </div>
+            <div class="social-item-wrap">
+                <div data-aos="zoom-in-down">
+                    <a target="_blank" href="https://www.instagram.com/geeksforgeeks_rec/">
+                        <div class="social-item"><i
+                                class="fa-fw fa-brands fa-instagram fa-2x"></i><span>Instagram</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://linktr.ee/a">
+                        <div class="social-item"><i class="fa-fw fa-solid fa-tree fa-2x"></i><span>LinkTree</span>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <a target="_blank" href="https://www.linkedin.com/company/geeksforgeeks-rec/">
+                        <div class="social-item"><i
+                                class="fa-fw fa-brands fa-linkedin-in fa-2x"></i><span>LinkedIn</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/">
+                        <div class="social-item"><i class="fa-fw fa-brands fa-youtube fa-2x"></i><span>YouTube</span>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us-loc" class="contact-body" style="display: none;">
+        <iframe 
+            id="contact-form"
+            loading="lazy" 
+            data-aos="fade-up" 
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdCMEzyWRRHGZTRjDh9TCwQ9oDDyhVZX3HyfMQzkvP9IP9Oiw/viewform?embedded=true">
+            Loading…
+        </iframe>
+    </section>
+
+
+    <section id="contact-us-loc" class="contact-body">
+        
+        <iframe 
+            id="contact-form"
+            loading="lazy" 
+            data-aos="fade-up" 
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdCMEzyWRRHGZTRjDh9TCwQ9oDDyhVZX3HyfMQzkvP9IP9Oiw/viewform?embedded=true" 
+            style="width: 100%; height: 687px; border: none;">
+            Loading…
+        </iframe>
+        
+    </section>
+
+
+    
+
+
+    <!-- Footer section -->
+    <section class="footer-body">
+        <div>Made with &nbsp; <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i> &nbsp; by</div>
+        <div>GeeksforGeeks Student Chapter <a href="https://www.raghuenggcollege.com/" style="color:azure;">Raghu Engineering College</a></div>
+    </section>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var typed = new Typed(".dynamic-text", {
+            strings: ["Data Scientists", "Cybersecurity Experts", "IoT Enthusiasts", "Robotics Engineers", 
+            "Game Developers", "App Developers", "Blockchain Enthusiasts", "AI Researchers", "Tech Entrepreneurs", 
+            "UI/UX Designers", "Cloud Computing Specialists", "Full Stack Developers", "Python Developers",
+             "Java Developers", "Open Source Contributors", "DevOps Engineers", "AR/VR Developers", "Mobile Developers", 
+             "Tech Bloggers", "Product Managers", "Community Builders", "Social Media Strategists", "Content Creators", 
+             "Data Analysts", "QA Testers", "Tech Support Specialists"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    });
+
+
+
+
+</script>
+
+
+</html>
